@@ -1,0 +1,236 @@
+<!--This page was designed and developed in full by Sarah K. Amer-->
+<!--Tool: VS Code. Plugins: HTMLHint, Code Runner, JavaScript (ES6) code snippets, Live Server-->
+<!--Logo concept and 2D illustrations by Sarah K. Amer-->
+<!--'Featured Work' images are placeholders from existing Behance projects and do not belong to Sarah K. Amer-->
+<!--Note that this iteration of the project is not yet fully responsive for different screens.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Designia - The Wild Creatives</title>
+</head>
+
+<body>
+    <!--This is not a mandatory script, buy added in case some browsers still don't run the 
+    'animation-timeline' CSS property-->
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+
+    <!--LOGO & NAVBAR-->
+    <!--This div contains 2 smaller divs: column-left and column-right. The left is for the logo. 
+    The right is for the navigation items-->
+    <div id="header-container">
+        
+        <div class="column-left">
+            <img src="images/placeholderlogo.png" alt="Designia Logo" width="25%" height="auto">
+        </div>
+        
+        <div class="column-right">
+            <div id="nav"><a href="index.html">WORK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pricing.html">PRICING</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="our_team.html">OUR TEAM</a>
+        </div>
+        
+        </div>
+    </div>
+    
+    <!--HERO SECTION-->
+    <!--This div is the space dedicated to the Hero Image, a big catchy title and tagline, and 
+    a hyperlink prompting the visitor to get in touch-->
+    <div id="hero-container">
+            <h1>THE WILD</h1><br>
+            <h1>CREATIVES</h1>
+            <br>
+            <h5><i>Designing everyday things for work and play.</i></h5> 
+            <h5><i>The wilder, the better.</i></h5>       
+            
+            <!--The 'Let's Chat' button is actually a stylized div. It's not a button, it's a div with a 
+            hyperlink designed to look like one.--> 
+            <div class="chatbutton">
+            <a href="index.html" target="_self">LET'S CHAT</a>
+            </div>
+    </div>
+
+    <!--NEW ARRIVALS-->
+    <!--This div is meant to be used as a generic off-white background on top of which any content can be 
+    added. If you check the CSS, you'll realize there's also a 'lilacsection' and 'whitesection' in case
+    the designer wanted to split the page up into 2-3 different colors-->
+    <div class="offwhitesection">
+            <h2>NEW ARRIVALS</h2>
+
+            <!--This is a div with fixed positioning to encourage the user to tip the designers -->
+            <div class="floating-coffee-button"> 
+            <a href="https://buymeacoffee.com/"><img src="images/BuyMeACoffee.jpg" alt="Buy Us a Coffee" width="95px" height="95px" ></a>
+            </div>
+
+            <!--This is another div to showcase the agency's newest product (a PDF). It contains two smaller divs, named column-left and
+            column-right. Column-left contains the book cover (animated to rotate slightly), while column-right contains the title and a hyperlink 
+            to purchase the book -->
+            <div class="digitalproduct">
+                <div class="column-left1">
+                <img src="images/StandOut Book.png" alt="Stand Out Ebook Cover" width="auto" height="500px">
+                </div>
+                <div class="column-right1">
+                    <h2>The <span style="background-color: #ff8a20;">Unsubtle</span> Art Of Standing Out In The Jungle Workbook</h2>
+                    <div class="getbookbutton">
+            <a href="index.html" target="_self">GET THE BOOK</a>
+            </div>
+                </div>
+            </div>                          
+    </div>
+
+    <!--OUR WHY-->
+    <div class="offwhitesection">
+            <h2>OUR WHY</h2>
+            <!--This div is dedicated to introducing the visitor to the main design team. It's divided into 2 smaller divs, with the one on 
+            the left containing text, and the one on the right containing an image. An animation plays and both these divs slide from opposite
+            ends of the screen to meet in the middle -->
+            <div class="ourwhyContainer">
+                
+                <div class="ourwhyLeftItem">
+                    <h2>Yeah, We're the <span class="standouts">Standouts</span> Helping Entrepreneurs Create Unique Experiences</h2>
+                    <p>We at Designia create amazing concepts and original visuals (no boring AI slop, we promise!) that communicates something 
+                    unique and unmistakably human to your community.
+                    <br><br>Our culture upholds the priceless soul of the human craft in the highest regard - and <i>that's</i> the kind of 
+                    people we wanna work with, too.
+                    <br><br>So expect something different..but maybe a little bit wild.</p>
+                  
+                    <div class="ourwhybutton">
+                        <a href="index.html" target="_self">GET TO KNOW US</a>
+                    </div>
+                </div>
+
+                <div class="ourwhyRightItem">
+                    <img src="images/OurWhyImage2.png" alt="The Wild Creatives" width="90%" height="auto">
+                </div>
+            </div>
+    </div>
+
+    <!--FEATURED WORK-->
+    <div class="offwhitesection">
+        <h2>FEATURED WORK</h2>
+        <a href="index.html" target="_self" style="text-decoration: none;">
+        <p style="text-align: right;margin:0 60px 20px 0;color: #464646;"><em>See All</em> &rarr;</p>
+        </a>
+        <!--This div is a simple image gallery of 3 highlighted projects the team's been working on. In a completed version of this site,
+        the See All hyperlink should take the visitor to the complete portfolio -->
+        <div class="galleryrow">
+            <img class="fadeInUpElement1" src="images/projects/placeholder1.png" alt="Sol Bakery" width="30%" height="30%" style="border-radius: 5px;">
+            <img class="fadeInUpElement2" src="images/projects/placeholder2.png" alt="Catpuccino" width="30%" height="30%" style="border-radius: 5px;">
+            <img class="fadeInUpElement3" src="images/projects/placeholder3.png" alt="Bibim-bop" width="30%" height="30%" style="border-radius: 5px;">
+        </div>
+    </div>
+
+    <!--OUR PARTNERS-->
+    <div class="offwhitesection">
+            <h2>OUR PARTNERS</h2>
+            <!--This div contains a simple carousel of partners that scrolls from right to left-->
+            <div class="carousel">
+                <div class="wrap">
+                <img src="images/partners/Adidas bw.png" width="15%" height="auto">
+                <img src="images/partners/Allianz bw.png" width="15%" height="auto">
+                <img src="images/partners/Seoudi bw.png" width="15%" height="auto">
+                <img src="images/partners/stacks bw.png" width="15%" height="auto">
+                <img src="images/partners/talabat bw.png" width="15%" height="auto">
+                <img src="images/partners/Adidas bw.png" width="15%" height="auto">
+                <img src="images/partners/Allianz bw.png" width="15%" height="auto">
+                <img src="images/partners/Seoudi bw.png" width="15%" height="auto">
+                <img src="images/partners/stacks bw.png" width="15%" height="auto">
+                <img src="images/partners/talabat bw.png" width="15%" height="auto">   
+                <img src="images/partners/Adidas bw.png" width="15%" height="auto">
+                <img src="images/partners/Allianz bw.png" width="15%" height="auto">
+                <img src="images/partners/Seoudi bw.png" width="15%" height="auto">
+                <img src="images/partners/stacks bw.png" width="15%" height="auto">
+                <img src="images/partners/talabat bw.png" width="15%" height="auto">
+                <img src="images/partners/Adidas bw.png" width="15%" height="auto">
+                <img src="images/partners/Allianz bw.png" width="15%" height="auto">
+                <img src="images/partners/Seoudi bw.png" width="15%" height="auto">
+                <img src="images/partners/stacks bw.png" width="15%" height="auto">
+                <img src="images/partners/talabat bw.png" width="15%" height="auto">             
+                </div>             
+            </div>
+
+    </div>
+
+    <!--TESTIMONIALS-->
+    <div class="offwhitesection"><br>
+            <h2>TESTIMONIALS</h2>
+            <!--This section contains a div displaying a grid. The grid contains 3 smaller divs designed as cards holding the testimonials 
+            of 3 high-profile clients. Each card contains the person's title, photo, and testimonial content-->
+            <section class="section__container">
+                <div class="section__grid">
+                    <div class="section__card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <h4>"Love the Simplicity."</h4>
+                        <p>They understood our brand and created a stunning website design.
+                        Professional, responsive, and on-time delivery. Highly recommended!
+                        </p>
+                        <img src="images/testimonials/Winsor.png" alt="user" />
+                        <h5>Winsor Collins</h5>
+                        <h6>Managing Director</h6>
+                    </div>
+        
+                    <div class="section__card">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <h4>"Excellent Designs!"</h4>
+                        <p>Efficient, reliable, and results-oriented. Visually appealing
+                        website, improved online visibility. Highly recommended!<br>
+                        </p>
+                        <img src="images/testimonials/Selena.png" alt="user" />
+                        <h5>Selena Grant</h5>
+                        <h6>Ceo & Founder</h6>
+                    </div>
+        
+                    <div class="section__card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <h4>"Efficient and Reliable"</h4>
+                    <p>Best decision we made. Stunning website, exceptional support. Always
+                    available and prompt issue resolution. Hassle-free experience!
+                    </p>
+                    <img src="images/testimonials/Yuri.png" alt="user" />
+                    <h5>Yuri Zhang</h5>
+                    <h6>Head of Marketing</h6>
+                    </div>
+                </div>
+            </section>              
+    </div>
+
+    <div id="footer">
+        <div class="footerelement">
+            <h2>READY TO PLAY?</h2>
+                    <br>
+        </div>
+        <div class="footerelement">
+            <p>&nbsp;</p>
+        </div>
+        <div class="footerelement">
+            <div class="bookcallbutton">
+            <a href="index.html" target="_self">BOOK A CALL</a>
+            </div>
+            <br>
+        </div>
+        <div class="footerelement"><br>
+            <p style="text-align: left;padding-left: 10px;color: #EAEDF2;">FOLLOW OUR SOCIALS:<br><br>
+                <a href="https://www.facebook.com"><img src="images/socials/facebook.png" width="7%" height="7%"></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com"><img src="images/socials/instagram.png" width="7%" height="7%"></a>&nbsp;&nbsp;
+                <a href="https://www.youtube.com"><img src="images/socials/youtube2.png" width="7%" height="7%"></a>&nbsp;&nbsp;
+                <a href="https://www.tiktok.com"><img src="images/socials/tiktok.png" width="7%" height="7%"></a>&nbsp;&nbsp;
+                <a href="https://www.behance.net"><img src="images/socials/behance2.png" width="7%" height="7%"></a>
+        </div>
+        <div class="footerelement">
+            <hr>
+        </div>
+        <div class="footerelement"><br>
+            <p>HAND-DRAWN WITH LOVE<br>
+            COPYRIGHT &copy; <b>DESIGNIA,</b> 2026
+            <div class="TermsandPrivacy">                
+                <small><a href="index.html" target="_self">Terms of Service</a> &nbsp;&nbsp;&nbsp; 
+                <a href="index.html" target="_self">Privacy Policy</a>
+                </small>
+            </p>
+            </div>    
+        </div>       
+    
+    
+</body>
+</html>

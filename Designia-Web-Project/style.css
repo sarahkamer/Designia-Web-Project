@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com');
+
+/* Defines fade-in animation of the words 'WILD' and 'CREATIVE' */
+@keyframes fadeUp {
+  0% { opacity: 0; 
+        transform: translateY(10px) scale(0.8)}
+  100% { opacity: 1; 
+        transform: translateY(0px) scale(1)}
+}
+/* Defines the fade-up animation for the images in Featured Works */
+@keyframes fadeInUp{
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }}
+/* Creates right-to left sliding animation of partner brands */
+@keyframes slide{
+    to {translate: calc(-4*250px);}
+}
+/* Defines gradual appearance of the New Arrival block (from opacity 0 to 1) */
+@keyframes slowlyAppear{
+    from {
+        opacity: 0;  
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Creates small left-to right sliding animation of the Book */
+@keyframes slight-move {
+  from {
+    transform: translate(30px, -16px);
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: translate(60px, -32px);
+    transform: rotate(-15deg);
+  }
+}
+/* Creates left-to-right sliding motion of 'Our Why' text */
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+    /*opacity: 0;*/
+  }
+  to {
+    transform: translateX(0px);
+    /*opacity: 1;*/
+  }
+}
+/* Creates right-to-left sliding motion of 'Our Why' Image */
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+    /*opacity: 0;*/
+  }
+  to {
+    transform: translateX(0px);
+    /*opacity: 1;*/
+  }
+}
+
+body {background-color: #EAEDF2; overflow-x: clip;}
+p {font-family: 'Public Sans', sans-serif; font-size: 1.2rem; word-spacing: 2px;}
+p::selection {background-color: #32620e; color:#FFFFFF;}
+
+/* Header Container stylings, which include the Navigation Bar, and Hero Section */
+#header-container {display: flex; gap: 20px;}
+.column-left {flex: 1; width: 30%;}
+.column-right {flex: 2; width: 70%;padding: 22px 0 0 0;}
+#nav {font-family: 'Oswald', sans-serif; font-size: 1.2em; font-weight: bold; text-align: right;padding-right: 10px;}
+#nav a {text-decoration: none; color: #000005;}
+#nav a:hover {text-decoration: underline; text-decoration-color: #32620e; text-decoration-thickness:5px; 
+text-decoration-style:solid; transition: text-decoration-color 0.2s ease;}
+#hero-container {background-image: url(images/HeroImage6.png); background-repeat: no-repeat; 
+width: auto; height:600px;background-size: cover; padding: 10px 0 10px 0;
+justify-content: center;}
+#hero-container h1 {color: #000005; margin-top: 10px;}
+#hero-container h5 {margin-bottom: 10px;}
+h1 {font-family: 'Oswald', sans-serif; font-size:7.75em; font-weight: 700px;text-align: center; margin: 0px 0px -10px 0px; color: #000005;
+animation: fadeUp 0.6s;}
+h2 {font-family: 'Montserrat', sans-serif; font-size: 56px; text-align: center; margin-bottom: 60px;margin-top: 60px;}
+h2::selection {background-color: #ff8a20; color:#FFFFFF;} 
+h3 {color: #5a429a;}
+h5 {font-family: 'Pinyon Script'; font-size: 36px; margin: 10px; text-align: center; animation: fadeUp 0.7s; color: #464646;}
+
+/* LET'S CHAT Button */
+.chatbutton{display: flex; justify-content: center; font-size:50px; margin-top: 30px;}
+.chatbutton a:link, a:visited{border-radius: 5px; font-family: 'Oswald', sans-serif; 
+background-color: #32620e; color: white; padding: 25px; text-align: center; 
+text-decoration: none; display: inline-block; transition: background-color 0.3s ease;margin-top: 10px;}
+.chatbutton a:hover, a:active {background-color:#ff8a20;}
+
+/* Generic divs to divide the HTML page into different colored sections as needed */
+.offwhitesection {background-color: #EAEDF2;}
+.whitesection {background-color: #f4f7fa;;}
+.lilacsection {background-color: #F8ECFF;}
+
+/* The Fixed-Position Donation Button on the bottom right side of the HTMl document */
+.floating-coffee-button {display: flex;width:95px; height:95px;background-color: #5a429a00;align-items: center; border-radius: 50%;
+justify-content: center;box-shadow: 2px 2px 5px #000005;position: fixed;right:20px;bottom: 50px;z-index: 10;overflow: hidden;}
+.floating-coffee-button img {object-fit: cover;}
+
+/* Digital Product/Ebook section */
+.digitalproduct {width: 100%; height:400px; background-color: #000005; overflow: hidden;display: flex; gap:300px;animation-name:slowlyAppear; 
+animation-duration: 1s; animation-timing-function: ease out; animation-fill-mode: forwards; animation-timeline: view(40% 0%);}
+.digitalproduct img {transform: translate(60px, -32px) rotate(-15deg); animation-name: slight-move; animation-duration: 2s; 
+animation-timing-function: ease-in-out;  animation-timeline:view(); padding: 0 0 0 70px; margin-left: 50px;}
+.column-left1 {flex: 1; width: 40%;}
+.column-right1 {flex: 2; width: 60%;padding: 10px 0 0 0;}
+.column-right1 h2 {color: #EAEDF2; text-align: left; margin: 32px 20px 20px 10px;}
+
+/* GET THE BOOK Button */
+.getbookbutton{justify-content: center; font-size:40px;}
+.getbookbutton a:link, a:visited{border-radius: 5px; font-family: 'Oswald', sans-serif; 
+background-color: #32620e; color: #EAEDF2; padding: 20px 116px 20px 116px; text-align: center; 
+text-decoration: none; display: inline-block; transition: background-color 0.3s ease;}
+.getbookbutton a:hover, a:active {background-color:#ff8a20;}
+
+/* Our Why Section */
+.ourwhyContainer {display: flex; }
+.ourwhyLeftItem {width:45%; flex-shrink: 1;text-align: left;padding-right: 15px; padding-left: 5px; animation: slide-right 0.8s; 
+animation-timeline: view(block 100% 0%); }
+.ourwhyLeftItem h2 {text-align: left; margin-bottom: 10px; margin-top: 0px;}
+.ourwhyLeftItem p {font-family: 'Public Sans', sans-serif;font-size: 1.4rem; color: #464646;text-align: justify;}
+.ourwhyRightItem {width:55%; flex-shrink: 1;animation: slide-left 0.8s;animation-timeline: view(block 100% 0%);}
+.ourwhyRightItem img {border-radius: 5px;margin: 0px; float: right;}
+.standouts {color: #32620e;}
+
+/* GET TO KNOW US Button */
+.ourwhybutton{display: flex; justify-content: left; font-size:25px;margin-top: 0px;}
+.ourwhybutton a:link, a:visited{border-radius: 5px; font-family: 'Oswald', sans-serif; 
+background-color: #32620e; color: white; padding: 20px; text-align: center; 
+text-decoration: none; display: inline-block; transition: background-color 0.3s ease;margin-top: 10px;}
+.ourwhybutton a:hover, a:active {background-color:#ff8a20;}
+
+/* Gallery Section */
+.galleryrow { display: flex; display: -ms-flexbox;-ms-flex-wrap: wrap; flex-wrap: wrap; gap:20px; 
+justify-content: center;}
+.fadeInUpElement1 {animation-name: fadeInUp; animation-duration: 1s; animation-timing-function: ease out; animation-fill-mode: forwards; animation-timeline: view(50% 0%);}
+.fadeInUpElement2 {animation-name: fadeInUp; animation-duration: 1.5s; animation-timing-function: ease out; animation-fill-mode: forwards; animation-timeline: view(50% 0%);}
+.fadeInUpElement3 {animation-name: fadeInUp; animation-duration: 2s; animation-timing-function: ease out; animation-fill-mode: forwards; animation-timeline: view(50% 0%);}
+
+/* Styling for carousel of scrolling brand names */
+.carousel {overflow: hidden; width: 100%;}
+.wrap {display: grid; grid-auto-flow: column; grid-auto-columns: 250px; animation: slide 30s linear infinite;}
+.wrap img {width: 200px; height: auto;object-fit: cover;}
+
+/* Testimonials Cards */
+.section__container {max-width: 90%; margin:auto; padding: 10px; text-align: center; font-family: 'Public Sans', sans-serif; font-size: 1.2rem;}
+.section__grid {display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;margin-bottom: 20px;}
+.section__card {position: relative; overflow: hidden; padding: 0px 30px 0px 30px; background-color: #f4f7fa; border-radius: 5px;
+border:1px solid #32620e; animation: fadeUp 0.7s; animation-timeline: view(block 70% 0%);}
+.section__card h4 { font-style: italic; margin-top: 3rem;margin-bottom: 1rem;font-size: 1.5rem;color: #000005; 
+font-family: 'Public Sans', sans-serif;}
+.section__card h4::selection {background-color: #ff8a20; color:#FFFFFF;} 
+.section__card p {margin-bottom: 2rem; color: #464646;font-family: 'Pinyon Script';font-size: 1.2rem;}
+.section__card img { margin-bottom: 1rem; max-width: 100px; border-radius: 50%;}
+.section__card h5 {font-size: 1.25rem; color: #000005;font-family: 'Pinyon Script';margin-top: 5px; }
+.section__card h5::selection {background-color: #ff8a20; color:#FFFFFF;} 
+.section__card h6 {font-size: 1rem; font-weight: 400; color:#000005;font-family: 'Public Sans', sans-serif;margin-top: 0px;}
+.section__card h6::selection {background-color: #32620e; color:#FFFFFF;}
+
+/* Entire Footer section */
+#footer {background-color:#000005; display: grid; grid-template-columns: 1fr 0.15fr 1fr; grid-template-rows: 1fr 0.25fr; gap: 5px;}
+#footer p {text-align: right;color: #EAEDF2;margin-bottom: 30px;}
+.footerelement {margin: 0px;padding: 0 10px 0 10px; justify-content: center;margin: auto;padding-left: 55px;}
+.footerelement h2 {color: #EAEDF2; text-align: left;font-size: 74px;}
+.bookcallbutton {justify-content: center; font-size:60px;}
+.bookcallbutton a:link, a:visited{border-radius: 5px; font-family: 'Oswald', sans-serif; 
+background-color: #32620e; color: white; padding: 20px 60px 20px 60px; text-align: center; 
+text-decoration: none; display: inline-block; transition: background-color 0.3s ease;}
+.bookcallbutton a:hover, a:active {background-color:#ff8a20;}
+hr {border: 0.5px solid #333; height: 0.5px; background-color: #333;}
+.TermsandPrivacy {text-align: right;padding-right: 10px;}
+.TermsandPrivacy a {text-decoration: none;color: #ff8a20;}
+.TermsandPrivacy a:hover {text-decoration: underline; text-decoration-color: #ff8a20; text-decoration-thickness:3px; 
+text-decoration-style:solid; transition: text-decoration-color 0.2s ease;}
+
+/* brand-specific shade of purple in case it's needed later: #5a429a */
